@@ -1,9 +1,9 @@
-package chapter3;
+package chapter3; // Chapter 3A
 
 import java.util.Scanner;
 
 /*
- * If statement:
+ * IF statement:
  * All salespeople get a payment of $1000 a week.
  * If their sales exceed 10 then they get an extra $250
  */

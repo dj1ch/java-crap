@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2; // End of Chapter Activity
 
 import java.util.Scanner;
 
@@ -16,16 +16,9 @@ public class MadLibs {
         System.out.println("In " + season + ", how many cups of coffee do you drink at minimum?");
         int cups = scanner.nextInt();
 
-        System.out.print("Complete Mad Lib: On a ");
-        System.out.print(adj);
-        System.out.print(" ");
-        System.out.print(season);
-        System.out.print(" ");
-        System.out.print("day, I drink a minimum of");
-        System.out.print(" ");
-        System.out.print(cups);
-        System.out.print(" ");
-        System.out.println("cups of coffee.");
+        // formatting lol
+        System.out.println("Complete Mad Lib: On a " + adj + " " + season + " "
+        + "day, I drank a minimum of " + cups + " cups of coffee.");
     }
 }
 
