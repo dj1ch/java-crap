@@ -1,4 +1,4 @@
-package chapter2; // End of Chapter Activity
+package chapter2; // Chapter 2 Homework
 
 import java.util.Scanner;
 
