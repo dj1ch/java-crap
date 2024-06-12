@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MadLibs {
 
-    public static void main(String arg[]) {
+    public static void main(String[] arg) {
         // im like 99% im doing this exercise out of order
         System.out.println("What season of the year is it?");
         Scanner scanner = new Scanner(System.in);
