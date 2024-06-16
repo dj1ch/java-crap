@@ -40,6 +40,7 @@ public class InstantCreditCheck {
     }
 
     // note: even though the creditScore and salary are redundant, they're only private to methods
+    // another note: the name of the method, type of method, args, etc are all part of the function signature
     public static boolean isUserQualified(int creditScore, double salary) {
         if ((creditScore >= requiredCreditScore) && (salary >= requiredSalary)) {
             return true;
