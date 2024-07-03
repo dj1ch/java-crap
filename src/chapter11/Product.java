@@ -10,4 +10,8 @@ public interface Product {
 
     String getColor();
     void setColor(String color);
+
+    default String getBarcode() {
+        return "no barcode";
+    }
 }
