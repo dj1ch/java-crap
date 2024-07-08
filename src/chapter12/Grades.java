@@ -11,7 +11,6 @@ public class Grades {
     // grades array
     private static int[] oldGrades;
     private static int[] redoGrades;
-    private static int[] newGrades;
     private static int[] checkedGrades;
 
     public static void main(String[] args) {
@@ -49,8 +48,7 @@ public class Grades {
         Map<String, Integer> grades = TestResults.getOriginalGrades();
         int i = 0;
         for (var entry : grades.entrySet()) {
-            buf[i] = entry.getKey();
-            i++;
+            buf[i++] = entry.getKey();
         }
     }
 
@@ -58,8 +56,7 @@ public class Grades {
         Map<String, Integer> grades = TestResults.getOriginalGrades();
         int i = 0;
         for (var entry : grades.entrySet()) {
-            buf[i] = entry.getValue();
-            i++;
+            buf[i++] = entry.getValue();
         }
     }
 
@@ -67,8 +64,7 @@ public class Grades {
         Map<String, Integer> grades = TestResults.getMakeUpGrades();
         int i = 0;
         for (var entry : grades.entrySet()) {
-            buf[i] = entry.getValue();
-            i++;
+            buf[i++] = entry.getValue();
         }
     }
 
