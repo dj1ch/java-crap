@@ -5,9 +5,9 @@ import java.util.*;
 public class CollectionsDemo {
 
     public static void main(String[] args) {
-        setDemo();
-        listDemo();
-        queueDemo();
+        //setDemo();
+        //listDemo();
+        //queueDemo();
         mapDemo();
     }
 
