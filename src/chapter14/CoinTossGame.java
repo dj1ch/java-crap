@@ -14,10 +14,10 @@ public class CoinTossGame {
         player1.setGuess(validateChoice());
 
         System.out.println("Player 1 chose " + player1.getGuess());
-        System.out.println("Player 2 has the other side");
+        System.out.println("Player 2 chose " + player2.getGuess());
 
         // choice
-        if (coin.flip().equals(player1.getGuess())) {
+        if (coin.flip().equalsIgnoreCase(player1.getGuess())) {
             System.out.println("You win " + player1.getName());
         } else {
             System.out.println("You win " + player2.getName());
@@ -26,12 +26,19 @@ public class CoinTossGame {
 
     public static String validateChoice() {
         Scanner scanner = new Scanner(System.in);
-        String choice = scanner.next();
+        String choice = scanner.nextLine();
         String[] sides = coin.getSides();
 
-        while ((choice != sides[0]) || (choice != sides[1])) {
-            System.out.println("Choice isn't valid. Please try again.");
+        while (!choice.equalsIgnoreCase(sides[0]) && !choice.equalsIgnoreCase(sides[1])) {
+            System.out.println("Invalid guess. Try again?");
             choice = scanner.nextLine();
+        }
+
+        // opposite choice
+        if (choice.equalsIgnoreCase(sides[0])) {
+            player2.setGuess(sides[1]);
+        } else if (choice.equalsIgnoreCase(sides[1])) {
+            player2.setGuess(sides[0]);
         }
 
         return choice;
